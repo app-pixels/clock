@@ -1,3 +1,5 @@
+> Part of [**app-pixels.com**](https://www.app-pixels.com) — browse + flash this app at [`/apps/clock`](https://www.app-pixels.com/apps/clock).
+
 # clock
 
 **Clock** · v1.0.0
