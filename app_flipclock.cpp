@@ -39,7 +39,7 @@ static uint16_t cfg_color       = 0xFFFF;   // override color, RGB565
 
 // ── State ────────────────────────────────────────────────────────────────────
 static Arduino_Canvas *canvas = nullptr;
-static Arduino_SH8601 *s_gfx = nullptr;
+static Arduino_OLED *s_gfx = nullptr;
 static int  s_prevMin  = -1;
 static int  s_prevHour = -1;
 static int  s_prevDay  = -1;
@@ -331,7 +331,7 @@ static void drawClock(struct tm &ti) {
 }
 
 // ── App entry points ─────────────────────────────────────────────────────────
-void app_flipclock_setup(Arduino_SH8601 *gfx) {
+void app_flipclock_setup(Arduino_OLED *gfx) {
     s_gfx   = gfx;
     canvas  = g_canvas;
     s_prevMin   = -1;
